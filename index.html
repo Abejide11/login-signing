@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/sign up</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: aqua;
+
+            place-items: center;
+        }
+
+        .container {
+            background-image: url(./WhatsApp\ Image\ 2024-11-26\ at\ 02.48.45_9984286b.jpg);
+            height: 100vh;
+            width: 85%;
+            display: flex;
+            gap: 300px;
+        }
+
+        .child1 {
+            display: flex;
+            flex-direction: column;
+            gap: 450px;
+            padding: 20px 30px;
+        }
+
+        .icon-logo {
+            width: 300px;
+
+            flex-direction: column;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name {
+            margin-top: 10px;
+        }
+
+        .name p {
+            width: 50px;
+        }
+
+        .log img {
+            height: 30px;
+            margin-top: 5px;
+        }
+
+        .sign h1 {
+            color: white;
+            font-weight: 700;
+        }
+
+        .sign h2 {
+            color: purple;
+            font-weight: 900;
+        }
+
+        .child2 {
+            margin-top: 140px;
+            color: white;
+        }
+
+        .child2 h1 {
+            font-weight: bolder;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .child2 h3 {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        input {
+            padding: 12px 20px 12px 40px;
+            width: 280px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: purple;
+            background-image: url(./Vector.png);
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+        }
+
+        button {
+            padding: 12px 12px;
+            width: 340px;
+            border-radius: 10px;
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+
+        }
+
+        .line {
+            border: 1px solid rgb(46, 43, 43);
+            margin-bottom: 20px;
+
+        }
+
+        .child2 p {
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        .google {
+            height: 30px;
+            width: 150px;
+            background-color: rgb(87, 6, 87);
+            border-radius: 5px;
+            display: flex;
+            cursor: pointer;
+            /* gap: 10px; */
+        }
+
+        .google img {
+            height: 20px;
+            padding: 4px;
+            margin-left: 15px;
+            width: 20px;
+        }
+
+        .google p {
+            padding: 4px;
+
+        }
+        .account{
+            display: none;
+        }
+
+        @media (min-width:320px) and (max-width:500px) {
+
+            body {
+                /* width: 40%; */
+
+            }
+
+            .container {
+                background-image: url(./WhatsApp\ Image\ 2024-11-26\ at\ 02.48.45_9984286b.jpg);
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+              max-height: 100vh;
+
+            }
+
+            .sign {
+                display: none;
+            }
+            
+        .child2 {
+            margin-top: 100px;
+            color: white;
+            margin-left: 30px;
+        }
+      
+         .account{
+            position:absolute;
+            top: 4%;
+            right:10%;
+            color: aliceblue;
+            font-size: 10px;
+            display: block;
+        
+         }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">
+            <div class="icon-logo">
+
+                <div class="logo">
+                    <div class="log">
+
+                        <img src="./Logo.png" alt="logo">
+                    </div>
+
+                    <div class="name">
+
+                        <p>Timileyin <span
+                                style="color: rgb(138, 132, 132); font-size: 11px;margin-left: 15px;letter-spacing: 5px;">MEMON</span>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="account">
+                <p>HAVE AN ACCOUNT? <span>SIGN IN</span></p>
+            </div>
+            <div class="sign">
+                <h1>SIGN IN TO YOUR</h1>
+                <h2>ADVENTURE!</h2>
+            </div>
+
+        </div>
+        <div class="child2">
+            <h1>SIGN IN</h1>
+            <h3>sign with email address</h3>
+            <form action="sumbit">
+
+                <input type="text" placeholder="yourname@gmail.com">
+                <button>sign up</button>
+            </form>
+            <div class="line"></div>
+            <p>or continue with</p>
+            <div class="icon">
+                <div class="google">
+                    <img src="./Group 1432.png" alt="">
+                    <p>Google</p>
+                </div>
+                <div class="google">
+                    <img src="./Group 1431.png" alt="">
+                    <p>Facebook</p>
+                </div>
+            </div>
+            <p>By registering you with our <span style="color: purple;">Terms and condition</span></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
